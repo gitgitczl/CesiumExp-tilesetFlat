@@ -1,9 +1,9 @@
-# 3dtiles模型剖切
+# 3dtiles模型压平
 
 [在线体验](http://mapgl.com/3d/)
 
-gitee：https://gitee.com/caozl1132/CesiumExp-tilesetCut
-github：https://github.com/gitgitczl/CesiumExp-tilesetCut
+gitee：https://gitee.com/caozl1132/CesiumExp-tilesetFlat
+github：https://github.com/gitgitczl/CesiumExp-tilesetFlat
 
 ps：如果可以的话，希望大家能给我个star，好让我有更新下去的动力；
 
