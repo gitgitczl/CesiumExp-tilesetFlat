@@ -13,7 +13,7 @@
 import { onMounted } from "vue";
 import Tool from "./js/plot/drawTool.js"
 /* import { Flat } from "./js/tileset.min.js" */
-import { Flat } from "./js/tileset/export.js"
+import Flat from "./js/tileset/tilesetFlat"
 let viewer: any = undefined;
 let tileset: any = undefined;
 let drawTool: any = undefined;
@@ -91,10 +91,12 @@ const start = () => {
         success: function (entObj: any, ent: any) {
             let positions = entObj.getPositions();
 
-            flatTool.addRegion(positions, 0);
+            flatTool.addRegion({
+                positions : positions,
+                id : new Date().getTime()
+            });
             drawTool.removeAll();
 
-           // console.log(tileset.customShader.vertexShaderText)
         }
     })
 }
